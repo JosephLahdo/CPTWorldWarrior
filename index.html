@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CPT World Warrior</title>
+   
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="events.js"></script>
+  <script src="CPTWorldWarrior.js"></script>
+  <style type="text/css"> 
+  .row{
+  overflow: hidden; 
+  }
+  [class*="col-"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+  }
+</style>
+</head>
+<body> 
+  <div id="banner" class="img-responsive"><center><img src="http://65.media.tumblr.com/tumblr_m6mgbyRLrq1qawzo2o1_1280.jpg"></center>
+  </div>
+  <div id="userInput">
+      <h1 id="instructionalPrompt">Insert the following information before submitting with your event(s) selection:</h1>
+      <hr>
+  		<b>Your Zipcode:</b><input type="text" id="inputZip"/><br>
+  		<b>Your Budget:</b><input type="text" id="budget"/><br>
+  		<b>Your Passengers:</b><input type="text" id="passengers"/><br>
+      <i>(Attn: Arrival and Departure times are based on 24 hour clock)</i><br>
+  		<b>Your Earliest Departure Time Hour:</b><input type="text" id="edHour"/>
+  		<b>Earliest Departure Time Minutes:</b><input type="text" id="edMinutes"/><br> 
+  		<b>Your Latest Departure Time Hour</b><input type="text" id="ldHour"/>
+  		<b>Latest Departure Time Minutes:</b><input type="text" id="ldMinutes"/><br>
+    </div>
+  <div id="container" class="container">
+    <div id="row" class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header" id="resultsDiv">Please select the events you would like to request information for:</h1>
+      </div>
+    </div>
+  </div>
+ </div>
+ <hr>
+<button class="btn-primary btn-lg btn-block btn-outline-primary" id="submitButton">Submit</button>
+<div id="progressDiv"></div>
+<a href="#output" style="display:none"></a>
+<div id="output">
+  <h2>
+    <b>Results will be displayed here here.</b>
+  </h2>
+</div>
+<hr>
+</body>
+</html>
